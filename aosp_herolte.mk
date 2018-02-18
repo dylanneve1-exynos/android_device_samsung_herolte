@@ -23,8 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common XenonHD stuff.
-$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+# Inherit some common PE stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := xenonhd_herolte
@@ -34,6 +34,6 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xenonhd.maintainer=dylanneve1 \
-    ro.xenonhd.donate="https://www.paypal.me/dylanneve"
+TARGET_ARCH := arm64
+TARGET_DENSITY := xxxhdpi
+TARGET_BOOT_ANIMATION_RES := 1080
