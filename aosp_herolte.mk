@@ -13,6 +13,8 @@
 # GNU General Public License for more details.
 #
 
+$(call inherit-product, device/xiaomi/mido/full_mido.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/herolte/device_herolte.mk)
 $(call inherit-product, device/samsung/hero-common/hero-common.mk)
