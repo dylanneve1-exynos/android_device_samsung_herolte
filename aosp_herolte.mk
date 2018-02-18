@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := xenonhd_herolte
+PRODUCT_NAME := aosp_herolte
 PRODUCT_DEVICE := herolte
 PRODUCT_MODEL := SM-G930F
 PRODUCT_BRAND := samsung
