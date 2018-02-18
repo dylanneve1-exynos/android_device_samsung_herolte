@@ -13,7 +13,7 @@
 # GNU General Public License for more details.
 #
 
-$(call inherit-product, device/samsung/herolte/full_herolte)
+$(call inherit-product, device/samsung/herolte/full_herolte.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/herolte/device_herolte.mk)
